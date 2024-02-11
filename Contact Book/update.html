@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Contact Details</title>
+<style type="text/css">
+
+   body{
+    background-color: gray;
+   }
+    table {
+        width: 350px;
+        background-color: hotpink;
+        border: 2px solid black;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    input{
+        padding: 5px;
+        border-radius: 1px;
+    }
+    label{
+        font-style: inherit;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <form action="update_contact.py" method="post" >
+        <table align="center">
+            <tr>
+                <td><label for="Name">Name:</label></td>
+                <td><input type="text" id="Name" name="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="PhoneNumber">Phone Number:</label></td>
+                <td><input type="text" id="PhoneNumber" name="PhoneNumber" required></td>
+            </tr>
+            <tr>
+                <td><label for="NewPhoneNumber">New Phone Number:</label></td>
+                <td><input type="text" id="NewPhoneNumber" name="NewPhoneNumber"></td>
+            </tr>
+            <tr>
+                <td><label for="NewEmailID">New Email ID:</label></td>
+                <td><input type="text" id="NewEmailID" name="NewEmailID"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Update Contact"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
